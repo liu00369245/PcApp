@@ -1,0 +1,64 @@
+<table id="user_tb">
+
+</table>
+<div id="user_toolbar">
+    <a href="#" id="user_addBtn" class="easyui-linkbutton" data-options="iconCls: 'icon-add',plain:'true'">增加用户</a>
+    <a href="#" id="user_delBtn" class="easyui-linkbutton" data-options="iconCls: 'icon-remove',plain:'true'">删除用户</a>
+    <a href="#" id="user_editBtn" class="easyui-linkbutton" data-options="iconCls: 'icon-edit',plain:'true'">修改用户</a>
+    <input id="user_searchText" class="easyui-searchbox" style="width:300px" data-options="prompt:'请输入查询字段',menu:'#user_mm'"></input>
+    <a href="#" id="user_clearBtn" class="easyui-linkbutton" data-options="iconCls: 'icon-reload',plain:'true'">刷新</a>
+    <div id="user_mm" style="width:120px">
+        <div data-options="name:'acc'">账号</div>
+        <div data-options="name:'phone'">手机</div>
+    </div>
+</div>
+<!-- 增加面板 -->
+<div id="user_add" class="easyui-dialog" title="增加" style="width:400px;height:500px;padding:20px" data-options="iconCls:'icon-save',resizable:true,modal:true,closed:true">
+    <form action="" id="user_addForm" method="get">
+
+        <div style="margin-bottom:10px">
+            <input id="user_acc" name="acc" class="easyui-textbox" data-options="prompt:'账号',required:true" style="width:300px;height:30px;padding:12px"
+                missingMessage="账号不能为空">
+        </div>
+        <div style="margin-bottom:10px">
+
+            <input id="user_pwd" name="pwd" class="easyui-textbox" data-options="prompt:'密码',required:true" style="width:300px;height:30px;padding:12px"
+                missingMessage="密码不能为空">
+        </div>
+
+        <div style="margin-bottom:10px">
+
+            <input id="user_email" name="email" class="easyui-textbox" data-options="prompt:'邮箱',required:true" style="width:300px;height:30px;padding:12px"
+                missingMessage="邮箱不能为空">
+        </div>
+        <div style="margin-bottom:10px">
+
+            <input id="user_phone" name="phone" class="easyui-textbox" data-options="prompt:'手机',required:true" style="width:300px;height:30px;padding:12px"
+                missingMessage="手机不能为空">
+        </div>
+
+    </form>
+</div>
+<!-- 修改面板 -->
+<div id="user_edit" class="easyui-dialog" title="增加" style="width:400px;height:500px;padding:20px" data-options="iconCls:'icon-save',resizable:true,modal:true,closed:true">
+    <form action="" id="user_editForm" method="get">
+
+        <div style="margin-bottom:10px">
+
+            <input id="user_edit_acc" name="acc" class="easyui-textbox" style="width:300px;height:30px;padding:12px">
+        </div>
+        <div style="margin-bottom:10px">
+
+            <input id="user_edit_pwd" name="pwd" class="easyui-textbox" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+
+            <input id="user_edit_email" name="email" class="easyui-textbox" style="width:300px;height:30px;padding:12px">
+        </div>
+        <div style="margin-bottom:10px">
+
+            <input id="user_edit_phone" name="phone" class="easyui-textbox" style="width:300px;height:30px;padding:12px">
+        </div>
+    </form>
+</div>

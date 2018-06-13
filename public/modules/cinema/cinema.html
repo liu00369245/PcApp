@@ -1,0 +1,114 @@
+<style type="text/css">
+    .choose {
+        background: url('../../img/icons/icm70_07.png') center no-repeat;
+        background-size: 30px 30px;
+    }
+
+    .sreen {
+        background: url('../../img/icons/screen_bg.png') center no-repeat;
+        background-size: 200px 30px;
+    }
+</style>
+<table id='cinema_list' style="height: 100%;">
+
+</table>
+
+
+<!-- 院线数据按钮 -->
+<div id="cinema_toolbar">
+    <a id="add_btn" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-add'" plain=true>增加院线</a>
+    <a id="del_btn" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-remove'" plain=true>删除院线</a>
+    <a id="updata_btn" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-edit'" plain=true>修改院线</a>
+
+    <input id="searcher" style="width:300px;"></input>
+    <div id="kind" style="width:120px">
+        <div data-options="name:'name'">院线</div>
+        <div data-options="name:'adress'">地址</div>
+        <div data-options="name:'phone'">热线</div>
+        <div data-options="name:'url'">官网</div>
+    </div>
+    <a id="searcher_refresh" href="#" class="easyui-linkbutton" data-options="iconCls:'icon-reload'" plain=true>清除</a>
+</div>
+<!-- 增加数据框 -->
+<div id="addCinemaBOX" style="width:400px ; text-align:center">
+    <p style="margin-top: 10px"> 院线：
+        <input type="text" id="add_cinema_name" name="name"> </p>
+    <p style="margin-top: 10px"> 地址：
+        <input type="text" id="add_cinema_adress" name="adress">
+    </p>
+    <p style="margin-top: 10px"> 热线：
+        <input type="text" id="add_cinema_phone" name="phone"> </p>
+    <p style="margin-top: 10px"> 官网：
+        <input type="text" id="add_cinema_url" name="url"> </p>
+    <p style="margin-top: 10px">
+        <input type="button" id="add_ting" class="easyui-linkbutton" value="新增影厅">
+    </p>
+    <div id='add_room' style="margin:0 auto;text-align:center">
+    </div>
+
+
+
+
+</div>
+<!-- 放映厅框架 -->
+<div id="addvideohall_ting_box" style="width:600px;text-align:center;line-height: 30px;">
+    <p>放映厅:
+        <input type='text' id="tingname" name="name" style='margin-top: 30px'>
+    </p>
+    <p>座　位:
+        <input type='text' id="tingseat" name="seat" disabled="disabled">
+    </p>
+    <p>
+        行:
+        <input type="number" id="ting-rows" style='width:50px' value='10'> 列:
+        <input type="number" id="ting-columns" style='width:50px' value='16'>
+    </p>
+    <p　style="margin-top: 10px">
+        <input type="button" class='easyui-linkbutton' id="add_show" value="预览">
+    </p>
+</div>
+
+<!-- 座位 -->
+<div id="seat_show" style="text-align:center">
+    <table style='margin: 0 auto'>
+        <thead>
+            <tr>
+                <img src="../../img/icons/screen_bg.png" alt="">
+            </tr>
+        </thead>
+        <tbody id="seat_show_body" style="width:600px ;margin-top: 60px; text-align:center">
+        </tbody>
+    </table>
+</div>
+
+
+<!-- 修改座位 -->
+<!-- <div id="change_seat" style="text-align:center">
+    <table style='margin: 0 auto'>
+       <thead>
+            <tr>
+                <img src="../../img/icons/screen_bg.png" alt="">
+            </tr>
+        </thead>
+        <tbody id="change_seat_show_body" style="width:600px ;margin-top: 60px; text-align:center">
+        </tbody>
+    </table>
+</div>
+ -->
+
+
+
+<!-- 修改数据框 -->
+<div id="updataCinemaBOX" class="easyui-window" title="修改" style="width:600px ; text-align:center">
+
+    <p style="margin-top: 10px"> 院线名：
+        <input type="text" id="updata_cinema_name" name="name"> </p>
+    <p style="margin-top: 10px"> 地　址：
+        <input type="text" id="updata_cinema_adress" name="adress"> </p>
+    <p style="margin-top: 10px"> 热　线：
+        <input type="text" id="updata_cinema_phone" name="phone"> </p>
+    <p style="margin-top: 10px"> 官　网：
+        <input type="text" id="updata_cinema_url" name="url"> </p>
+    <div id='updata_room'>
+    </div>
+</div>

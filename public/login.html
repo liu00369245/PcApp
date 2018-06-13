@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./themes/default/easyui.css">
+    <link rel="stylesheet" href="./themes/icon.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="./js/easyui-lang-zh_CN.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="formDiv">
+            <form id="loginForm" action="/login" method="post">
+                <h1>猫 眼 电 影 管 理 系 统</h1>
+                <p id="errorP">
+                    <a href="#">账号</a>
+                    <span>或</span>
+                    <a href="#">密码</a>错误!
+                </p>
+                <div style="margin-bottom:50px;text-align: left">
+                    <label for="acc">账号：</label>
+                    <input class="easyui-textbox" id="acc" name="acc" style="width:300px;height:40px;padding:12px" data-options="iconCls:'icon-man',iconWidth:38">
+                </div>
+                <div style="margin-bottom:50px;text-align: left">
+                    <label for="psw">密码：</label>
+                    <input class="easyui-textbox" type="password" id="pwd" name="pwd" style="width:300px;height:40px;padding:12px" data-options="iconCls:'icon-lock',iconWidth:38">
+                </div>
+                <div style="text-align: left">
+                    <label for="skhs" style="visibility: hidden;">登录：</label>
+                    <button id="btn1" class="easyui-linkbutton" style="width:300px;height:40px;color:black;">登　录</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

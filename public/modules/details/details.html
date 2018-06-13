@@ -1,0 +1,189 @@
+<div id="details_tb">
+
+</div>
+<div id="details_toolbar">
+    <a href="#" id="details_addBtn" class="easyui-linkbutton" data-options="iconCls: 'icon-add',plain:'true'">增加电影</a>
+    <a href="#" id="details_delBtn" class="easyui-linkbutton" data-options="iconCls: 'icon-remove',plain:'true'">删除电影</a>
+    <a href="#" id="details_editBtn" class="easyui-linkbutton" data-options="iconCls: 'icon-edit',plain:'true'">修改电影</a>
+    <input id="details_searchText" class="easyui-searchbox" style="width:300px" data-options="prompt:'请输入查询字段',menu:'#details_mm'"></input>
+    <div id="details_mm" style="width:120px">
+        <div data-options="name:'name_cn'">电影名称</div>
+        <div data-options="name:'type'">电影类型</div>
+        <div data-options="name:'year'">上映年份</div>
+    </div>
+    <a href="#" id="details_clearBtn" class="easyui-linkbutton" data-options="iconCls: 'icon-reload',plain:'true'">刷新</a>
+</div>
+
+
+<!-- 增加面板 -->
+<div id="details_add" class="easyui-dialog" title="增加" style="width:400px;height:600px;padding:20px" data-options="iconCls:'icon-save',resizable:true,modal:true,closed:true">
+    <form action="" id="details_addForm" method="get">
+
+        <div style="margin-bottom:10px">
+            <input id="details_name_cn" name="name_cn" class="easyui-textbox" data-options="prompt:'电影名'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_name_eg" name="name_eg" class="easyui-textbox" data-options="prompt:'英文电影名'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_type" name="type" class="easyui-textbox" data-options="prompt:'类型'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_score" name="score" class="easyui-textbox" data-options="prompt:'电影评分'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_like" name="like" class="easyui-textbox" data-options="prompt:'想看'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_area" name="area" class="easyui-textbox" data-options="prompt:'区域'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_year" name="year" class="easyui-textbox" data-options="prompt:'年份'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_time" name="time" class="easyui-textbox" data-options="prompt:'电影时长'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_release_time" name="release_time" class="easyui-textbox" data-options="prompt:'上映时间'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_details" name="details" class="easyui-textbox" data-options="prompt:'详情'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_money" name="money" class="easyui-textbox" data-options="prompt:'票房'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input type="text" id="details_actor_url" name="inputFile" multiple>
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_actor" name="actor" class="easyui-textbox" data-options="prompt:'演员'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input type="text" id="details_director_url" name="inputFile" multiple>
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_director" name="director" class="easyui-textbox" data-options="prompt:'导演'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input type="text" id="details_index_url" name="inputFile" multiple>
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input type="text" id="details_details_url" name="inputFile" multiple>
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input type="text" id="details_photos_url" name="inputFile" multiple>
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input type="text" id="details_related_info_url" name="inputFile" multiple>
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input type="text" id="details_related_movie_url" name="inputFile" multiple>
+        </div>
+    </form>
+</div>
+<!-- 修改面板 -->
+<div id="details_edit" class="easyui-dialog" title="增加" style="width:400px;height:600px;padding:20px" data-options="iconCls:'icon-save',resizable:true,modal:true,closed:true">
+    <form action="" id="details_editForm" method="get">
+        <input type="hidden" id="details_id" name="_id">
+
+        <div style="margin-bottom:10px">
+            <input id="details_edit_name_cn" name="name_cn" class="easyui-textbox" data-options="prompt:'电影名'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_edit_name_eg" name="name_eg" class="easyui-textbox" data-options="prompt:'英文电影名'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_edit_type" name="type" class="easyui-textbox" data-options="prompt:'类型'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_edit_score" name="score" class="easyui-textbox" data-options="prompt:'电影评分'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_edit_like" name="like" class="easyui-textbox" data-options="prompt:'想看'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_edit_area" name="area" class="easyui-textbox" data-options="prompt:'区域'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_edit_year" name="year" class="easyui-textbox" data-options="prompt:'年份'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_edit_time" name="time" class="easyui-textbox" data-options="prompt:'电影时长'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_edit_release_time" name="release_time" class="easyui-textbox" data-options="prompt:'上映时间'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_edit_details" name="details" class="easyui-textbox" data-options="prompt:'详情'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_edit_money" name="money" class="easyui-textbox" data-options="prompt:'票房'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input type="text" id="details_edit_actor_url" name="inputFile" multiple>
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_edit_actor" name="actor" class="easyui-textbox" data-options="prompt:'演员'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input type="text" id="details_edit_director_url" name="inputFile" multiple>
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input id="details_edit_director" name="director" class="easyui-textbox" data-options="prompt:'导演'" style="width:300px;height:30px;padding:12px">
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input type="text" id="details_edit_index_url" name="inputFile" multiple>
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input type="text" id="details_edit_details_url" name="inputFile" multiple>
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input type="text" id="details_edit_photos_url" name="inputFile" multiple>
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input type="text" id="details_edit_related_info_url" name="inputFile" multiple>
+        </div>
+
+        <div style="margin-bottom:10px">
+            <input type="text" id="details_edit_related_movie_url" name="inputFile" multiple>
+        </div>
+
+    </form>
+</div>

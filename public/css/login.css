@@ -1,0 +1,54 @@
+.content{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: url('../img/bc/timg.jpg') center no-repeat;
+    background-size: cover;
+}
+.formDiv{
+    width: 450px;
+    height: 400px;
+    background:rgb(199, 196, 196,0);
+    margin:100px auto;
+}
+#errorP{
+    width: 180px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px auto;
+    border-radius: 5px;
+    color: #f22;
+    background:rgb(228, 225, 225,0.7)
+}
+#errorP a{
+    text-decoration: none;
+    /* color: rgb(84, 81, 211); */
+}
+
+#loginForm{
+    /* padding-top: 30px; */
+    width: 100%;
+    height: 100%;;
+    text-align: center;
+}
+h1{
+    font-size: 40px;
+    color:white;
+    padding-right: 30px;
+}
+p{
+    color: red;
+    opacity: 0;
+}
+.easyui-linkbutton {
+    outline: none;
+    color: darkgoldenrod
+}
+
+label {
+    color:white;
+    font-size: 18px;
+    font-weight: 600
+}
+
+

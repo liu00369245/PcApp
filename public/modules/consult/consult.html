@@ -1,0 +1,75 @@
+<!-- 数据表格 -->
+<div id='consult_app' style="height: 100%;"></div>
+<!-- 表格组件 -->
+<div id="consult_toolbar">
+    <a href="#" id="consult_addbtn" class="easyui-linkbutton" data-options="iconCls:'icon-add'" plain=true>增加资讯</a>
+    <a href="#" id="consult_removebtn" class="easyui-linkbutton" data-options="iconCls:'icon-remove'" plain=true>删除资讯</a>
+    <a href="#" id="consult_amendbtn" class="easyui-linkbutton" data-options="iconCls:'icon-edit'" plain=true>修改资讯</a>
+    <input id="consult_ss" class="easyui-searchbox" style="width:300px" data-options="prompt:'请输入查询字段',menu:'#consult_mm'"></input>
+    <div id="consult_mm" style="width:120px">
+        <div data-options="name:'title'">资讯标题</div>
+        <div data-options="name:'press_time'">发布时间</div>
+    </div>
+    <a href="#" id="consult_clearbtn" class="easyui-linkbutton" data-options="iconCls:'icon-reload'" plain=true>刷新</a>
+</div>
+<!-- 增加弹窗 -->
+<div id='consult_add' class="easyui-window" title="添加" style="width:400px;height:400px;">
+
+    <form action="get" id='consult_form'>
+        <p style="margin-top: 10px">
+            <label for="title">资讯标题</label>
+            <input id='consult_add_ti' name='title' class="easyui-textbox" style="width:300px">
+        </p>
+        <p style="margin-top: 10px">
+            <label for="press_time">发布时间</label>
+            <input name='press_time' class="easyui-textbox" style="width:300px">
+        </p>
+
+        <!-- <input type='button' id='consult_ap_btn' value='新增图文' style="margin-top:10px;"> -->
+        <a href="#" id='consult_ap_btn' style="margin-top:10px;margin-left:50px" data-options="width:'300px'" class="easyui-linkbutton">新增图文</a>
+        <div id='consult_ap_box' style="margin-top:10px">
+
+            <!-- <p style="margin-top: 10px">文段内容</p>
+            <input name='article' id='wj' class="easyui-textbox" style="width: 300px;height: 50px;"> -->
+        </div>
+        <a href="#" id='consult_com_btn' style="margin-top:10px;margin-left:50px;" data-options="width:'300px'" class="easyui-linkbutton">新增评论</a>
+        <!-- <input type='button' id='consult_com_btn' value='新增评论' style="margin-top:20px;"> -->
+        <div id='consult_com_box' style="margin-top:10px;">
+            <!-- <input name='comment' class="easyui-textbox" style="width: 300px;height: 50px;"> -->
+        </div>
+    </form>
+</div>
+
+
+<div id='consult_amend' class="easyui-window" title="增加员工" style="width:400px;height:400px;">
+
+    <p style="margin-top: 10px">
+        <label for="consult_amend_title">资讯标题</label>
+        <input id='consult_amend_title' class="easyui-textbox" style="width:300px">
+    </p>
+
+    <p style="margin-top: 10px">
+        <label for="consult_amend_press_time">发稿时间</label>
+        <input id='consult_amend_press_time' class="easyui-textbox" style="width:300px">
+    </p>
+
+    <p style="margin-top: 10px">
+        <label style="margin-left: 24px;" for="consult_amend_picture">配图</label>
+        <input id='consult_amend_picture' class="easyui-textbox" style="width:300px">
+    </p>
+
+    <p style="margin-top: 10px">
+        <label style="margin-left: 24px;" for="consult_amend_article">文段</label>
+        <input id='consult_amend_article' class="easyui-textbox" style="width:300px">
+    </p>
+
+    <p style="margin-top: 10px">
+        <label style="margin-left: 24px;" for="consult_amend_comment">评论</label>
+        <input id='consult_amend_comment' class="easyui-textbox" style="width:300px">
+    </p>
+
+</div>
+
+
+</div>
+</div>

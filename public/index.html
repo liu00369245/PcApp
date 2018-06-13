@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>猫眼电影后台管理</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./themes/gray/easyui.css">
+    <link rel="stylesheet" type="text/css" href="./themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="./css/demo.css">
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="./js/ajaxfileupload.js"></script>
+    <script type="text/javascript" src="./js/datagrid-detailview.js"></script>
+    <script type="text/javascript" src="./js/easyui-lang-zh_CN.js"></script>
+    <style>
+        #top_h1 {
+            float: left;
+            font-size: 30px;
+        }
+
+        #top_p {
+            float: right;
+
+        }
+
+        #top_p a {
+            text-decoration: none;
+            color: rgb(87, 87, 101);
+            background-color: #afafafee
+        }
+
+        #top_span {
+            position: absolute;
+            right: 10px;
+            bottom: 5px;
+            color: rgb(87, 87, 101);
+            font-weight: 800
+        }
+    </style>
+</head>
+
+<body class="easyui-layout">
+    <div data-options="region:'north',border:false" style="height:60px;background: url('./img/bc/true.jpg');color:#575765;padding:10px;overflow: hidden;position: relative">
+        <h1 id="top_h1">猫 眼 电 影 管 理 系 统</h1>
+        <p id="top_p">
+            <a href="./login.html" id="inLogin">请登录</a>
+            <a href="./login.html" id="outLogin">退出登录</a>
+        </p>
+        <span id="top_span">开发人员 : 粟生辉 廖瑾宇 李茜 张盼 刘敬豪</span>
+    </div>
+    <div data-options="region:'west',split:true,title:'功能列表'" style="width:180px;">
+        <ul id="index_left_ul" style="list-style: none;font-size: 14px;font-weight: 600;color:#575765;text-align: center">
+            <li data-href='users' style="padding: 5px;margin-top: 20px;cursor: pointer">
+                <img src=" ./img/icons/folder_user.png " style="vertical-align: text-bottom "> 用户管理
+            </li>
+            <li data-href='consult' style="padding: 5px;margin-top: 5px;;cursor: pointer ">
+                <img src="./img/icons/folder_table.png " style="vertical-align: text-bottom "> 咨询管理
+            </li>
+            <li data-href='details' style="padding: 5px;margin-top: 5px;;cursor: pointer">
+                <img src="./img/icons/film_save.png" style="vertical-align: text-bottom "> 电影管理
+            </li>
+            <li data-href='hotTv' style="padding: 5px;margin-top: 5px;;cursor: pointer">
+                <img src="./img/icons/film_go.png" style="vertical-align: text-bottom"> 热播电影
+            </li>
+            <li data-href='hotMovie' style="padding: 5px;margin-top: 5px;cursor: pointer">
+                <img src="./img/icons/film_link.png" style="vertical-align: text-bottom "> 热映电影
+            </li>
+            <li data-href='hotReady' style="padding: 5px;margin-top: 5px;cursor: pointer">
+                <img src="./img/icons/film_error.png" style="vertical-align: text-bottom "> 即将上映
+            </li>
+            <li data-href='cinema' style="padding: 5px;margin-top: 5px;cursor: pointer">
+                <img src="./img/icons/image.png" style="vertical-align: text-bottom "> 院线管理
+            </li>
+            <li data-href='movieMatch' style="padding: 5px;margin-top: 5px;cursor: pointer">
+                <img src="./img/icons/images.png" style="vertical-align: text-bottom "> 院线匹配
+            </li>
+        </ul>
+    </div>
+    <div data-options="region:'south',border:false" style="height:20px;background:#f3f3f3;color:#575765">&copy;2018 猫眼电影 www.maoyan.com</div>
+    <div data-options="region:'center'" style="background: url('./img/bc/60b06d60224193fa8ebfaa184ab67d58.jpg') center center no-repeat">
+        <!-- 页面中间数据 -->
+        <div id="index_content_tabs" class="easyui-tabs" data-options="fit:true,border:false,plain:true">
+        </div>
+    </div>
+    <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>
